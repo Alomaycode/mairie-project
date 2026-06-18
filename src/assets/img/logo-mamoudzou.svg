@@ -1,0 +1,11 @@
+<svg width="260" height="88" viewBox="0 0 260 88" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Mairie de Mamoudzou</title>
+  <desc id="desc">Logo stylise pour la mairie de Mamoudzou</desc>
+  <rect width="260" height="88" rx="18" fill="white"/>
+  <path d="M28 58C36 43 46 33 60 27C69 23 79 21 91 21C84 27 80 35 81 45C82 56 89 64 101 70C83 72 67 70 54 64C43 59 34 57 28 58Z" fill="#198754"/>
+  <path d="M34 63C48 55 63 51 78 51C91 51 102 54 112 61C99 66 86 69 72 69C57 69 44 67 34 63Z" fill="#0D6EFD"/>
+  <path d="M44 32C54 18 68 12 87 14C78 18 72 25 70 34C67 45 70 54 79 62C64 58 53 51 46 41C44 38 43 35 44 32Z" fill="#F2C94C"/>
+  <circle cx="97" cy="28" r="8" fill="#E84A5F"/>
+  <text x="128" y="38" fill="#172033" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="800">Mamoudzou</text>
+  <text x="128" y="60" fill="#667085" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="1.4">MAIRIE</text>
+</svg>

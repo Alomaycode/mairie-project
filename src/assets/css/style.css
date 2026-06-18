@@ -1,0 +1,104 @@
+:root {
+  --nav-bg: rgba(255, 255, 255, 0.9);
+  --nav-border: rgba(25, 135, 84, 0.16);
+  --text-main: #111827;
+  --text-muted: #64748b;
+  --accent: #198754;
+  --accent-dark: #0d6efd;
+  --surface: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  color: var(--text-main);
+  background: #f8fafc;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body,
+#app {
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 110px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.section-kicker {
+  margin: 0 0 14px;
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* @media (max-width: 767.98px) {
+  .hero-section {
+    min-height: 760px;
+    align-items: flex-start;
+    margin-top: -88px;
+    padding: 140px 0 56px;
+  }
+
+  .hero-bg {
+    object-position: 62% center;
+  }
+
+  .hero-overlay {
+    background:
+      linear-gradient(180deg, rgba(248, 250, 252, 0.98) 0%, rgba(248, 250, 252, 0.9) 42%, rgba(248, 250, 252, 0.28) 100%),
+      linear-gradient(90deg, rgba(248, 250, 252, 0.96), rgba(248, 250, 252, 0.42));
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .about-section {
+    padding: 64px 0;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    margin-top: 36px;
+  }
+
+  .training-section {
+    padding: 64px 0;
+  }
+
+  .training-header,
+  .training-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .training-header {
+    gap: 18px;
+  }
+
+  .training-grid {
+    margin-top: 36px;
+  }
+
+  .training-card {
+    min-height: 340px;
+    padding: 28px;
+  }
+
+  .training-card a {
+    left: 28px;
+  }
+} */
