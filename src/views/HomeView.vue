@@ -60,4 +60,6 @@ const equipements = [
       </div>
     </section>
   </main>
+
+  
 </template>
