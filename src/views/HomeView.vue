@@ -37,8 +37,6 @@ const equipements = [
 
 <template>
   <main>
-    <!-- Hero section -->
-    <Hero />
 
     <!-- Equipements municipaux -->
     <section class="equipement-section py-5">
