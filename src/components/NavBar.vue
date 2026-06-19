@@ -1,5 +1,25 @@
 <script setup>
 import LogoImage from '../assets/img/logo-mamoudzou.svg'
+import { useConnexionStore } from '../stores/connexionStore.js'
+import { useRouter } from 'vue-router'
+
+const connexionStore = useConnexionStore()
+const router = useRouter()
+
+const afficherConnexion = () => {
+  connexionStore.afficherConnexion()
+  router.push({ name: 'connexion' })
+}
+
+const afficherAccueil = () => {
+  connexionStore.masquerConnexion()
+}
+
+const deconnecter = () => {
+  connexionStore.logout()
+  router.push({ name: 'home' })
+}
+
 </script>
 
 <template>
@@ -25,25 +45,48 @@ import LogoImage from '../assets/img/logo-mamoudzou.svg'
         <div class="collapse navbar-collapse" id="menu">
           <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-2">
             <li class="nav-item">
-              <RouterLink class="nav-link" exact-active-class="active" to="/">Accueil</RouterLink>
+              <RouterLink
+                class="nav-link"
+                exact-active-class="active"
+                to="/"
+                @click="afficherAccueil"
+              >
+                Accueil
+              </RouterLink>
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" exact-active-class="active" to="/Equipement">Equipement</RouterLink>
+              <RouterLink class="nav-link" exact-active-class="active" to="/Utilisateurs">Utilisateurs</RouterLink>
+            </li>
+            <li class="nav-item">
+              <RouterLink class="nav-link" exact-active-class="active" to="/Equipements">Equipements</RouterLink>
             </li>
             <li class="nav-item">
               <RouterLink class="nav-link" exact-active-class="active" to="/Reservation">Reservations</RouterLink>
             </li>
           </ul>
 
-          <div class="navbar-actions d-flex align-items-lg-center gap-2">
+          <div class="navbar-actions d-flex flex-column align-items-lg-center gap-1">
             <button
+              v-if="!connexionStore.isLoggedIn"
               type="button"
               class="btn btn-login"
-              data-bs-toggle="modal"
-              data-bs-target="#loginModal"
+              @click="afficherConnexion"
             >
               Se connecter
             </button>
+
+            <button
+              v-else
+              type="button"
+              class="btn btn-login"
+              @click="deconnecter"
+            >
+              Se deconnecter
+            </button>
+
+            <span v-if="connexionStore.isLoggedIn" class="navbar-user-name">
+              {{ connexionStore.user.prenom }} {{ connexionStore.user.nom }}
+            </span>
           </div>
         </div>
       </div>

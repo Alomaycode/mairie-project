@@ -1,12 +1,12 @@
 .hero-section {
   background:
-    linear-gradient(135deg, rgba(25, 135, 84, 0.12), rgba(13, 110, 253, 0.1)),
-    #f6f8fb;
+    linear-gradient(135deg, rgba(8, 35, 29, 0.82), rgba(13, 45, 92, 0.72)),
+    url('../hero.png') center / cover no-repeat;
   padding: 72px 0 56px;
 }
 
 .hero-title {
-  color: #172033;
+  color: #ffffff;
   font-size: clamp(2rem, 4vw, 3.5rem);
   font-weight: 800;
   line-height: 1.05;
@@ -14,10 +14,14 @@
 }
 
 .hero-text {
-  color: #667085;
+  color: rgba(255, 255, 255, 0.86);
   font-size: 1.05rem;
   line-height: 1.7;
   max-width: 560px;
+}
+
+.hero-section .section-kicker {
+  color: #8ee6b5;
 }
 
 .hero-login {

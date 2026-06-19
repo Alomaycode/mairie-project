@@ -12,7 +12,7 @@ const equipementStore = useEquipementStore()
         <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-end gap-3 mb-4">
           <div>
             <p class="section-kicker">Equipements municipaux</p>
-            <h2 class="equipement-section-title mb-0">Equipements disponibles a la location</h2>
+            <h1 class="equipement-section-title mb-0">Liste des equipements</h1>
           </div>
         </div>
 

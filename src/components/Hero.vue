@@ -1,5 +1,8 @@
 <script setup>
 import Connexion from './Connexion.vue'
+import { useConnexionStore } from '../stores/connexionStore.js'
+
+const connexionStore = useConnexionStore()
 </script>
 
 <template>
@@ -8,14 +11,14 @@ import Connexion from './Connexion.vue'
       <div class="row align-items-center g-4">
         <div class="col-12 col-lg-6">
           <p class="section-kicker">Mairie de Mamoudzou</p>
-          <h1 class="hero-title">Espace de connexion</h1>
+          <h1 class="hero-title">Location d'equipements municipaux</h1>
           <p class="hero-text">
-            Accedez a votre espace personnel pour consulter les informations et gerer les services municipaux.
+            Consultez les equipements disponibles et preparez votre demande de reservation.
           </p>
         </div>
 
         <div class="col-12 col-lg-5 offset-lg-1">
-          <Connexion />
+          <Connexion v-if="!connexionStore.isConnectVue" />
         </div>
       </div>
     </div>
